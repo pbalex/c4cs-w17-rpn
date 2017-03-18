@@ -6,7 +6,9 @@ class TestBasics(unittest.TestCase):
 		self.assertEqual(2, result)
 	def test_subtract(self):
 		result = rpn.calculate('5 3 -')
+		print(result)
 		self.assertEqual(2, result)
 	def test_exponent(self):
 		result = rpn.calculate('5 3 ^')
+		print(result)
 		self.assertEqual(125, result)
