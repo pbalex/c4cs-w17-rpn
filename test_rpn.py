@@ -8,7 +8,4 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('5 3 -')
 		print(result)
 		self.assertEqual(2, result)
-	def test_exponent(self):
-		result = rpn.calculate('5 3 ^')
-		print(result)
-		self.assertEqual(125, result)
+	

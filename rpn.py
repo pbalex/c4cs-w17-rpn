@@ -3,8 +3,7 @@ OPERATORS = {
 	'+': operator.add,
 	'-': operator.sub,
 	'*': operator.mul,
-	'/': operator.truediv,
-	'^': operator.pow,
+	'/': operator.truediv
 }
 def calculate(arg):
 	stack = list()
