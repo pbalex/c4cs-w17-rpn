@@ -1,0 +1,7 @@
+language: python
+rvm:
+ - "3.5"
+
+script: pytest
+
+
