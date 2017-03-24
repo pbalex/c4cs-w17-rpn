@@ -4,8 +4,6 @@ python:
 install:
  - pip install coveralls
 script:
- coverage run --source=c4cs-w17-rpn test_rpn.py -m unittest
+ coverage run -m unittest
 after_success:
  coveralls
-
-
