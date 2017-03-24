@@ -1,4 +1,7 @@
 import operator
+import readline
+import colorama
+from colorama import Fore, Back, Style
 OPERATORS = {
 	'+': operator.add,
 	'-': operator.sub,
@@ -20,22 +23,27 @@ def calculate(arg):
 		try:
 			operand = float(operand)
 			stack.append(operand)
+
 		except:
 			arg2 = stack.pop()
 			arg1 = stack.pop()
+			print(Back.BLUE + Fore.YELLOW,arg2, arg1)
 			operator_fn = OPERATORS[operand]
+			print(Back.YELLOW + Fore.BLUE + str(operator_fn))
 			result = operator_fn(arg1, arg2)
 			
 			stack.append(result)
 	return stack.pop()
 def main():
-	print("THIS")
-	print("IS")
+	print(Fore.RED + "THIS")
+	print(Fore.GREEN + "IS")
 	print("AN")
-	print("RPN")
+	print(Fore.BLUE + "RPN")
 	print("CALCULATOR")
 	while True:
 		result = calculate(input('rpn calc> '))
+		print(Style.RESET_ALL)
 		print("Result:", result)
+
 if __name__ == '__main__':
 	main()
