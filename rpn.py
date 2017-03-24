@@ -6,6 +6,13 @@ OPERATORS = {
 	'/': operator.truediv,
 	'^': operator.pow,
 	'%': operator.mod,
+	'~': operator.inv,
+	'|': operator.abs,
+	'n': operator.neg,
+	'p': operator.pos,
+	'<': operator.lt,
+	'>': operator.gt,
+	'=': operator.eq,
 }
 def calculate(arg):
 	stack = list()
