@@ -1,15 +1,12 @@
 language: python
 python:
  - "3.5"
+install:
  - pip install -r requirements.txt
  - pip install coveralls
-install:
-
-script: 
-coverage run --source=c4cs-w17-rpn test_rpn.py -m unittest
-
-after success:
-coveralls
-
+script:
+ coverage run --source=c4cs-w17-rpn test_rpn.py -m unittest
+after_success:
+ coveralls
 
 
