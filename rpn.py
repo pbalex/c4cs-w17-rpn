@@ -22,6 +22,11 @@ def calculate(arg):
 			stack.append(result)
 	return stack.pop()
 def main():
+	print("THIS")
+	print("IS")
+	print("AN")
+	print("RPN")
+	print("CALCULATOR")
 	while True:
 		result = calculate(input('rpn calc> '))
 		print("Result:", result)
